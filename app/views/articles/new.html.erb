@@ -1,0 +1,6 @@
+<h1>New Article</h1>
+<%= semantic_form_for @article do |f| %>
+    <%= f.input :title %>
+    <%= f.input :url %>
+    <%= f.action :submit, :as => :button %>
+<% end %>
