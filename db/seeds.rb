@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+50.times do |count|
+  Article.create({
+    title: 'This is a long URL link of the article that is mentioned here',
+    url: 'http://google.com'
+  })
+end
