@@ -21,3 +21,4 @@ gem 'spring',        group: :development
 gem 'rspec-rails',   group: :development
 gem 'shoulda-matchers',   group: :development
 gem 'factory_girl_rails', group: :development
+gem 'capybara', group: :development
