@@ -1,5 +1,13 @@
 require 'rails_helper'
 
-RSpec.describe "article/new.html.erb", :type => :view do
-  pending "add some examples to (or delete) #{__FILE__}"
+RSpec.describe "articles/new.html.erb", :type => :view do
+
+  it "renders form to post a new article" do
+    assign(:article, Article.new)
+    visit '/articles/new'#render
+    fill_in "Title", with: "article title"
+    fill_in "Url", with: "http://google.com"
+    expect(lambda{ click_button "Post Article" }).to change{ Article.count }.by(1)
+  end
+  
 end
