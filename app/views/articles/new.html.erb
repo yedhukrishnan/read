@@ -1,6 +1,11 @@
-<h1>New Article</h1>
-<%= semantic_form_for @article do |f| %>
-    <%= f.input :title %>
-    <%= f.input :url %>
-    <%= f.action :submit, :as => :button %>
-<% end %>
+<div class="container-fluid">
+  <div class="col-md-8 col-md-offset-2">
+    <%= semantic_form_for(@article) do |f| %>
+    <%= f.label :title %>
+    <%= f.text_area :title %>
+    <%= f.label :url %>
+    <%= f.text_area :url %>
+    <%= f.submit "Post Article", class: "btn btn-primary"  %>
+    <% end %>
+  </div>
+</div>>
