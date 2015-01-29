@@ -4,7 +4,7 @@
       <% @articles.each do |article| %>
       <tr>
         <td>
-          <%= link_to article.title, article.url %>
+          <%= link_to article.title, article.url, target: "_blank" %>
         </td>
       </tr>
       <% end %>
