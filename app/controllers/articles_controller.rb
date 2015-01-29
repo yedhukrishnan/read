@@ -10,8 +10,11 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(article_params)
-    @article.save
-    redirect_to articles_path
+    if @article.save
+      flash[:success] = "Yay!! We have added your post!"
+      redirect_to articles_path
+    end
+    
   end
 
   private

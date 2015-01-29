@@ -1,11 +1,11 @@
-<div class="container-fluid">
+<div class="container-fluid article-page">
   <div class="col-md-8 col-md-offset-2">
     <%= semantic_form_for(@article) do |f| %>
     <%= f.label :title %>
-    <%= f.text_area :title %>
+    <%= f.text_field :title %>
     <%= f.label :url %>
-    <%= f.text_area :url %>
-    <%= f.submit "Post Article", class: "btn btn-primary"  %>
+    <%= f.text_field :url %>
+    <%= f.submit "Post Article", class: "btn btn-primary submit-button"  %>
     <% end %>
   </div>
 </div>>

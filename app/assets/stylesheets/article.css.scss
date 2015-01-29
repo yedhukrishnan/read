@@ -1,8 +1,26 @@
+.navbar {
+  margin-bottom: 0 !important;
+  border-radius: 0 !important;
+}
+
+.article-page {
+  margin-top: 20px;
+}
+
 textarea, select, .uneditable-input {
   width: 100%;
   margin-bottom: 15px;
 }
 
 input {
-  width: 30%;
+  display: block;
+  width: 100%;
+}
+
+label {
+  margin-top: 10px;
+}
+
+.submit-button {
+  margin-top: 20px;
 }
