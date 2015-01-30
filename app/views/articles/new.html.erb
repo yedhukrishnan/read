@@ -5,6 +5,8 @@
     <%= f.text_field :title %>
     <%= f.label :url %>
     <%= f.text_field :url %>
+    <%= f.label :category_id %>
+    <%= f.collection_select :category_id, @categories, :id, :name, include_blank: true %>
     <%= f.submit "Post Article", class: "btn btn-primary submit-button"  %>
     <% end %>
   </div>
