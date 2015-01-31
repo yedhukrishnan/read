@@ -12,10 +12,10 @@ class ArticlesController < ApplicationController
   def create
     @article = Article.new(article_params)
     if @article.save
-      flash[:success] = "Yay!! We have added your post!"
+      flash[:success] = I18n.t("article.create_success_message")
       redirect_to articles_path
     else
-      flash[:error] = "Seems like you missed out something!"
+      flash[:error] = I18n.t("article.create_failure_message")
       redirect_to new_article_path
     end
   end

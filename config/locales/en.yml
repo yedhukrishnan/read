@@ -20,4 +20,9 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  title: "Read"
+  header:
+    new_article: "new article"
+  article:
+    create_success_message: "Yay!! We have added your post!"
+    create_failure_message: "Seems like you missed out something!"
