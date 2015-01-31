@@ -7,8 +7,11 @@
     <table class="table table-striped table-hover">
       <% @articles.each do |article| %>
       <tr>
-        <td>
+        <td class="artile-title">
           <%= link_to article.title, article.url, target: "_blank" %>
+        </td>
+        <td class="article-category">
+          <%= article.category.name %>
         </td>
       </tr>
       <% end %>

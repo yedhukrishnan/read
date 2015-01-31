@@ -13,6 +13,7 @@ RSpec.describe "articles/index.html.erb", :type => :view do
     render
     expect(rendered).to include("Sample Article")
     expect(rendered).to include("Lorem Ipsum")
+    expect(rendered).to include("dummy")
   end
   
 end

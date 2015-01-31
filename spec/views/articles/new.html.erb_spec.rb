@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "articles/new.html.erb", :type => :view do
 
-  it "enables us to post a new article" do
+  xit "enables us to post a new article" do
     assign(:article, Article.new)
     visit "/articles/new"
     fill_in "Title", with: "article title"
