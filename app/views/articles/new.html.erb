@@ -1,3 +1,7 @@
+<% flash.each do |key, value| %>
+  <div class="alert alert-danger"><%= value %></div>
+<% end %>
+
 <div class="container-fluid article-page">
   <div class="col-md-8 col-md-offset-2">
     <%= semantic_form_for(@article) do |f| %>
