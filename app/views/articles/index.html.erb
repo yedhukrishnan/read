@@ -1,4 +1,6 @@
-<div class="alert alert-success"><%= value %></div>
+<% flash.each do |key, value| %>
+  <div class="alert alert-success"><%= value %></div>
+<% end %>
 
 <div class="container-fluid article-page">
   <div class="col-md-10 col-md-offset-1">
