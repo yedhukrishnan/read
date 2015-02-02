@@ -10,8 +10,14 @@ Seeing is believing.. See the alpha version here: [enigmatic-beyond-3722](https:
 * Article categories
 
 #### And, These Are Yet To Be Done
-* Create anew category
+* Create a new category
 * Upvote an article
 * User login for posting new articles
 
-I would be more than happy to accept comments, suggestions, improvements and pull requests :)
+#### Contributions?
+
+Of course! I would love to see this changing from mine to ours. Help to improve this with:
+* Comments
+* Suggestions
+* Improvements
+* Pull Requests
