@@ -4,11 +4,11 @@ I love [Hacker News](https://news.ycombinator.com/), and this project is truly i
 
 Seeing is believing.. See the alpha version here: [enigmatic-beyond-3722](https://enigmatic-beyond-3722.herokuapp.com/) (It is still under construction!)
 
-#### Right Now, We Have
+#### Right Now, We Have..
 * Read articles
 * Post a new article
 * Article categories
 
-#### To Be Done
+#### And, These Are Yet To Be Done
 * Upvote an article
 * User login for posting new articles
