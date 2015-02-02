@@ -7,8 +7,8 @@ Seeing is believing.. See the alpha version here: [enigmatic-beyond-3722](https:
 #### Right Now, We Have
 * Read articles
 * Post a new article
+* Article categories
 
 #### To Be Done
-* Article categories
 * Upvote an article
 * User login for posting new articles
