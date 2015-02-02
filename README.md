@@ -10,5 +10,6 @@ Seeing is believing.. See the alpha version here: [enigmatic-beyond-3722](https:
 * Article categories
 
 #### And, These Are Yet To Be Done
+* Create anew category
 * Upvote an article
 * User login for posting new articles
