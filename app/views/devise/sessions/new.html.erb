@@ -1,0 +1,13 @@
+<div class="container-fluid article-page">
+  <div class="col-md-8 col-md-offset-2">
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true %>
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+    <%= f.submit "Log in", class: "btn btn-primary submit-button" %>
+    <% end %>
+
+  </div>
+</div>

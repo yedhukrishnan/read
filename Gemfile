@@ -13,6 +13,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'formtastic', '~> 3.0'
 gem "validate_url"
+gem 'devise'
 
 gem 'rails_12factor', group: :production
 

@@ -15,8 +15,17 @@
           <a class="navbar-brand" href="/"><%= t("title") %></a>
         </div>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="/articles/new"><%= t("header.new_article") %></a></li>
+          <li><%= link_to t("header.new_article"), new_article_path %></li>
+          <% if user_signed_in? %>
+          <!--<li><%= current_user.email %></li>-->
+          <li><%= link_to current_user.email, edit_user_registration_path %></li>
+          <li><%= link_to "logout", destroy_user_session_path, method: :delete  %></li>
+          <% else %>
+          <li><%= link_to "sign up", new_user_registration_path %></li>
+          <li><%= link_to "login", new_user_session_path%></li>
+          <% end %>
         </ul>
+        
       </div>
     </nav>
     

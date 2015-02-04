@@ -19,11 +19,8 @@ RSpec.describe Article, :type => :model do
     article = Article.new({ title: "some good article", category: category })
     article.url = "invalid-url"
     expect(article).not_to be_valid
-
     article.url = "https://google.com"
     expect(article).to be_valid
-    
-    
   end
 
 end
