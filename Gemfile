@@ -23,6 +23,9 @@ group :development do
   gem 'capybara'
 end
 
-gem 'rails_12factor',   group: :production
+group :production do
+  gem 'rails_12factor'
+end
+
 gem 'sdoc', '~> 0.4.0', group: :doc
 
