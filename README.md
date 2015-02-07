@@ -15,7 +15,7 @@ And, These Are Yet To Be Done:
 * Create a new category
 * Upvote an article
 * Comment on an article (discussions)
-* User login for posting new articles
+* User login (with username) for posting new articles
 
 #### Contributions?
 

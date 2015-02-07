@@ -15,12 +15,17 @@ gem 'formtastic', '~> 3.0'
 gem "validate_url"
 gem 'devise'
 
-gem 'rails_12factor', group: :production
+group :development do
+  gem 'spring'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+  gem 'factory_girl_rails'
+  gem 'capybara'
+end
 
-gem 'sdoc', '~> 0.4.0',          group: :doc
+group :production do
+  gem 'rails_12factor'
+end
 
-gem 'spring',        group: :development
-gem 'rspec-rails',   group: :development
-gem 'shoulda-matchers',   group: :development
-gem 'factory_girl_rails', group: :development
-gem 'capybara', group: :development
+gem 'sdoc', '~> 0.4.0', group: :doc
+
