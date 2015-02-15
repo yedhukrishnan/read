@@ -2,6 +2,14 @@ require 'rails_helper'
 
 RSpec.describe "articles/new.html.erb", :type => :view do
 
+  before(:example) do
+    user = User.create({ username: 'admin', email: 'admin@example.com', password: 'adminadmin', password_confirmation: 'adminadmin'})
+    visit "/users/sign_in"
+    fill_in "Login", with: user.username
+    fill_in "Password", with: "adminadmin"
+    click_button "Log in"
+  end  
+  
   it "enables us to post a new article" do
     assign(:article, Article.new)
     category = Category.create({ name: "MyCategory" })

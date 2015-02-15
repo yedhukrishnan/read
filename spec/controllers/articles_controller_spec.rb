@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe ArticlesController, :type => :controller do
+  include Devise::TestHelpers
 
   describe "GET index" do    
     it "renders the article list page" do
@@ -12,6 +13,7 @@ RSpec.describe ArticlesController, :type => :controller do
 
   describe "GET new" do
     it "renders form for creating a new article" do
+      sign_in user = User.create({ username: 'lol', email: 'lol@lol.com', password: 'adminadmin', password_confirmation: 'adminadmin'})
       get :new
       expect(response).to have_http_status(:success)
     end

@@ -1,5 +1,7 @@
 class ArticlesController < ApplicationController
 
+  before_filter :authenticate_user!, only: [:new]
+  
   def index
     @articles = Article.paginate({ page: params[:page], per_page: 15 }).order('created_at DESC')
   end
