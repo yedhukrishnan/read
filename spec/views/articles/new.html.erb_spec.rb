@@ -3,10 +3,10 @@ require 'rails_helper'
 RSpec.describe "articles/new.html.erb", :type => :view do
 
   before(:example) do
-    user = User.create({ username: 'admin', email: 'admin@example.com', password: 'adminadmin', password_confirmation: 'adminadmin'})
+    user = FactoryGirl.create(:user)
     visit "/users/sign_in"
     fill_in "Login", with: user.username
-    fill_in "Password", with: "adminadmin"
+    fill_in "Password", with: user.password
     click_button "Log in"
   end  
   

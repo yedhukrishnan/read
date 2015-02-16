@@ -13,7 +13,7 @@ RSpec.describe ArticlesController, :type => :controller do
 
   describe "GET new" do
     it "renders form for creating a new article" do
-      sign_in user = User.create({ username: 'lol', email: 'lol@lol.com', password: 'adminadmin', password_confirmation: 'adminadmin'})
+      sign_in user = FactoryGirl.create(:user)
       get :new
       expect(response).to have_http_status(:success)
     end
