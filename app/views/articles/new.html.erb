@@ -11,6 +11,7 @@
     <%= f.text_field :url %>
     <%= f.label :category_id %>
     <%= f.collection_select :category_id, @categories, :id, :name, include_blank: true %>
+    <%= f.hidden_field :user_id, value: current_user.id %>
     <%= f.submit "Post Article", class: "btn btn-primary submit-button"  %>
     <% end %>
   </div>

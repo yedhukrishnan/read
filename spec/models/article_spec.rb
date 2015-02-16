@@ -5,6 +5,7 @@ RSpec.describe Article, :type => :model do
   subject { Article.new }
 
   it { is_expected.to belong_to :category }
+  it { is_expected.to belong_to :user }
   
   it { is_expected.to respond_to :title }
   it { is_expected.to respond_to :url }

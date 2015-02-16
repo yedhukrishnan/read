@@ -8,7 +8,8 @@
       <% @articles.each do |article| %>
       <tr>
         <td class="artile-title">
-          <%= link_to article.title, article.url, target: "_blank" %>
+          <div class="article-info"><%= link_to article.title, article.url, target: "_blank" %></div>
+          <div class="author-info"><%= article.user.username %></div>
         </td>
         <td class="article-category">
           <%= article.category.name %>

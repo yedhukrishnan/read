@@ -5,14 +5,19 @@
 
 .article-page {
   margin-top: 20px;
-}
 
-.article-category {
-  text-align: right;
-  font-size: 12px;        
-  vertical-align: bottom;
-}
+  .article-category {
+    text-align: right;
+    font-size: 12px;        
+    vertical-align: middle;
+  }
 
+  .author-info {
+    font-size: 10px;
+    color: rgb(107, 107, 107);
+  }
+
+}
 
 textarea, select, .uneditable-input {
   width: 100%;
@@ -31,3 +36,4 @@ label {
 .submit-button {
   margin-top: 20px;
 }
+
