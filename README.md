@@ -9,13 +9,14 @@ Right Now, We Have:
 * Read articles
 * Post a new article
 * Article categories
+* User login (with username) for posting new articles
 
 And, These Are Yet To Be Done:
 
 * Create a new category
 * Upvote an article
 * Comment on an article (discussions)
-* User login (with username) for posting new articles
+
 
 #### Contributions?
 
