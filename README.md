@@ -16,6 +16,7 @@ And, These Are Yet To Be Done:
 * Create a new category
 * Upvote an article
 * Comment on an article (discussions)
+* Restyling
 
 
 #### Contributions?
