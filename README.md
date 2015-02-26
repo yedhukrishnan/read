@@ -24,5 +24,5 @@ And, These Are Yet To Be Done:
 Of course! I would love to see this changing from mine to ours. Help to improve this with:
 * Comments
 * Suggestions
-* Improvements
+* Improvements and
 * Pull Requests
