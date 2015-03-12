@@ -6,4 +6,7 @@ class Article < ActiveRecord::Base
 
   belongs_to :category
   belongs_to :user
+
+	has_many :upvotes
+	has_many :upvoted_users, through: :upvotes, source: :user
 end
