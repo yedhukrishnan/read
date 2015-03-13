@@ -5,8 +5,8 @@ class User < ActiveRecord::Base
   validates :username, presence: true, uniqueness: { case_sensitive: false }
 
   has_many :articles
-	has_many :upvotes
-	has_many :upvoted_articles, through: :upvotes, source: :article
+  has_many :upvotes
+  has_many :upvoted_articles, through: :upvotes, source: :article
 
   def self.find_first_by_auth_conditions(warden_conditions)
     conditions = warden_conditions.dup

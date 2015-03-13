@@ -6,8 +6,8 @@ RSpec.describe Article, :type => :model do
 
   it { is_expected.to belong_to :category }
   it { is_expected.to belong_to :user }
-	it { is_expected.to have_many :upvotes }
-	it { is_expected.to have_many :upvoted_users }
+  it { is_expected.to have_many :upvotes }
+  it { is_expected.to have_many :upvoted_users }
 
   it { is_expected.to respond_to :title }
   it { is_expected.to respond_to :url }
