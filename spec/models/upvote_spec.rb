@@ -1,5 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe Upvote, :type => :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+
+  subject{ Upvote.new }
+  
+  it { should validate_presence_of :user_id }
+  it { should validate_presence_of :article_id }
+  
 end
