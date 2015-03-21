@@ -14,7 +14,7 @@ Right Now, We Have:
 And, These Are Yet To Be Done:
 
 * Create a new category
-* Upvote an article
+* Upvote an article (currently working on)
 * Comment on an article (discussions)
 * Restyle the entire app
 
