@@ -1,6 +1,7 @@
 box: wercker/rvm
 build:
     steps:
+        - rvm install ruby-2.1.2
         - rvm-use:
             version: 2.1.2
         - bundle-install
