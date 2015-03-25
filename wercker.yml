@@ -1,0 +1,12 @@
+box: wercker/rvm
+build:
+    steps:
+        - bundle-install
+        - script:
+            name: echo ruby information
+            code: |
+              
+                echo "ruby version $(ruby --version) running"
+                echo "from location $(which ruby)"
+        - script:
+            name: rspec
